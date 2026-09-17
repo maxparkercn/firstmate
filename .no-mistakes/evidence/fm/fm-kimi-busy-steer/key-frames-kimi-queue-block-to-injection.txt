@@ -1,0 +1,121 @@
+Live Kimi Code 2.0.0 in tmux 3.7c (private socket), real bin/fm-send.sh and bin/fm-watch.sh from the gate worktree.
+Each frame is 'tmux capture-pane -p' bottom rows, columns trimmed to 150 for readability. Full frames: frames/*.txt
+
+########## S1: fm-send against a mid-turn Kimi (tool call 'sleep 150' running) ##########
+
+----- s1-fm-send-03: doorbell typed into the composer -----
+ ● User wants sleep 150, then reply FINISHED. Foreground max 300s, sleep 150 fits. Use Bash with timeout 200.
+ ● Running a command · $ sleep 150
+  🌕 · Tip: /goal for multi-step work with a clear finish line
+ ╭────────────────────────────────────────────────�
+ │ > : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*
+ │   each, then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/hand
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main                                                  
+                                                                                                                                                      
+
+----- s1-fm-send-04: after Enter: Kimi QUEUED it (❯ row + ctrl-s hint, composer empty) = fm_composer_kimi_queued_input match -----
+  🌘 · Tip: /goal for multi-step work with a clear finish line
+ ─────────────────────────────────────────────────�
+   ❯ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*
+   ↑ to edit · ctrl-s to steer immediately
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main                                                  
+                                                                                                                                                      
+
+----- s1-fm-send-05: after fm-send sent ONE Ctrl-S: doorbell INJECTED into the running turn (✨ row), queue block gone, tool call still running -----
+ ● Running a command · $ sleep 150
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.m
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+  🌕 · Tip: /goal for multi-step work with a clear finish line
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main                                                  
+                                                                                                                                                      
+
+fm-send stderr: fm-send: doorbell queued by a mid-turn kimi in steerlive:hx-kimi and steered into its running turn; the steer is durably recorded at /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox/001.msg
+
+########## S2: the real watcher (FM_TASK_INBOX_GRACE_SECS=20, ring max default 3) re-rings while Kimi stays mid-turn ##########
+
+----- s2-watcher-05: watcher re-ring #1 typed the doorbell -----
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.m
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+  🌘 · Tip: /goal for multi-step work with a clear finish line
+ ╭────────────────────────────────────────────────�
+ │ > : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*
+ │   each, then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/hand
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main        shift-tab to Plan mode to review the appro
+                                                                                                                                                      
+
+----- s2-watcher-06: Kimi queued it again (queue block) -----
+  🌕 · Tip: /goal for multi-step work with a clear finish line
+ ─────────────────────────────────────────────────�
+   ❯ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*
+   ↑ to edit · ctrl-s to steer immediately
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main        shift-tab to Plan mode to review the appro
+                                                                                                                                                      
+
+----- s2-watcher-07: watcher sent one Ctrl-S: second ✨ row injected -----
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.m
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+  🌘 · Tip: /goal for multi-step work with a clear finish line
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main        shift-tab to Plan mode to review the appro
+                                                                                                                                                      
+
+----- watcher triage log: 7 re-rings, every one result=4 (steered), none counted toward escalation -----
+[2026-09-17T14:53:31+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:53:52+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:54:14+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:54:35+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:54:56+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:55:18+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+[2026-09-17T14:55:39+0800] steer-inbox delivery attempt: live-kimi-busy 001.msg result=4
+
+----- ladder state (.ring-state = <record> <count> <last-ring-epoch>) over the whole mid-turn window: count never left 0 -----
+  17 [(absent)]
+  20 [001.msg	0	1789628011]
+  19 [001.msg	0	1789628032]
+  20 [001.msg	0	1789628054]
+  18 [001.msg	0	1789628075]
+  20 [001.msg	0	1789628096]
+  19 [001.msg	0	1789628118]
+  18 [001.msg	0	1789628139]
+
+----- .wake-queue -----
+(no .wake-queue was ever written)
+
+########## S3: tool call ends, Kimi reads the injected instruction, acts and acks ##########
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ● Let me list the inbox files.
+ ● Ran a command · $ ls -la '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/ · 5 more line
+   … drwxr-xr-x@  2 lele  staff   64 Sep 17 14:53 handled
+ ● Used Read (/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox/001.msg) · 4 lines
+ ● Ran a command · $ touch /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/acted-midturn && mv '/var/folders/9m/0zwy5dlx3h51v
+   handled
+  🌑 · Tip: @: mention files
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main               ctrl+o expand | shift-tab to Plan m
+
+########## S4: idle Kimi, second steer: no steer reported, doorbell read directly ##########
+# fm-send #2 (idle kimi) exit=0
+# stdout:
+# stderr:
+   Command executed successfully.
+  🌖 · Tip: ctrl-s to add guidance without waiting for the turn to finish
+ ╭────────────────────────────────────────────────�
+ │ >                                                                                                                                                
+ ╰────────────────────────────────────────────────�
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main              ctrl+o expand | /goal next to queue 

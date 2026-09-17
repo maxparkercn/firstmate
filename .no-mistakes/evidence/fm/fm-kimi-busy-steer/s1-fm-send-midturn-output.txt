@@ -1,0 +1,11 @@
+# fm-send #1 (mid-turn kimi) exit=0
+# stdout:
+# stderr:
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the requested message WILL still be sent.
+●  watcher supervision needs Stop-owned automatic recovery; inspect the hook registration and startup status before ending the turn.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+fm-send: doorbell queued by a mid-turn kimi in steerlive:hx-kimi and steered into its running turn; the steer is durably recorded at /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox/001.msg

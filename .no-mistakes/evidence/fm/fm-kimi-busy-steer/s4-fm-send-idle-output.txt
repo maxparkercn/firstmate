@@ -1,0 +1,3 @@
+# fm-send #2 (idle kimi) exit=0
+# stdout:
+# stderr:

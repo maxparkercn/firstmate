@@ -1,0 +1,9 @@
+=== base commit 334fa12 (before fix): new Kimi ladder tests ===
+not ok - a kimi doorbell that was queued and steered should report the steered outcome 4, got 0
+not ok - a steered re-ring must not spend the attempt budget (watcher exited after 3 doorbells):
+stale: sess:fm-t1 (unread firstmate instruction: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-task-inbox.gPXWmJ/kimi-rering/state/t1.inbox/001.msg still unhandled after 3 doorbell delivery attempts with an idle pane; inspect the worker)
+1789627540	1	stale	sess:fm-t1	stale: sess:fm-t1 (unread firstmate instruction: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-task-inbox.gPXWmJ/kimi-rering/state/t1.inbox/001.msg still unhandled after 3 doorbell delivery attempts with an idle pane; inspect the worker)
+
+=== target commit 850c6f9 (after fix): same tests ===
+ok - inbox: a queued kimi doorbell gets exactly one Ctrl-S and reports steered; no block, another harness, or another backend gets none
+ok - watcher: a kimi re-ring that lands in the queue block is steered with one Ctrl-S and spends no budget; escalation resumes once the queue is gone

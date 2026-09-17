@@ -1,0 +1,17 @@
+# s2-watcher frame 24 (14:54:50)
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.msg and, in numeric order, read and act on each,
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.msg and, in numeric order, read and act on each,
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.msg and, in numeric order, read and act on each,
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.msg and, in numeric order, read and act on each,
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+ ✨ : Firstmate instruction waiting: list '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/*.msg and, in numeric order, read and act on each,
+    then mv each handled file to '/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-live-steer.xQzAC0/home/state/live-kimi-busy.inbox'/handled/.
+  🌘 · Tip: /goal for multi-step work with a clear finish line
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ >                                                                                                                                                                                                  │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ Never Ask  K3 thinking: high  …/1330ebde-4029-49e8-af69-5d09c6807309/scratchpad/kimi-verify  main                                                                            /init: generate AGENTS.md
+                                                                                                                                                                                 context: 3% (21.9k/1M)

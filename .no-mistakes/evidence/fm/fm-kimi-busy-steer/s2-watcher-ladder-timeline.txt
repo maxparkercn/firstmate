@@ -1,0 +1,151 @@
+t+4s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+5s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+6s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+8s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+9s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+10s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+11s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+12s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+13s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+14s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+15s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+16s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+17s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+19s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+20s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+21s ring-state=[(absent)] triage-attempts=0 wake-queue=none watcher=alive handled=no acted=no
+t+22s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+23s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+24s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+25s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+26s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+28s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+29s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+30s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+31s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+32s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+33s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+34s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+35s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+36s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+37s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+39s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+40s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+41s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+42s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+43s ring-state=[001.msg	0	1789628011] triage-attempts=1 wake-queue=none watcher=alive handled=no acted=no
+t+44s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+45s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+46s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+47s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+48s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+50s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+51s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+52s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+53s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+54s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+55s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+56s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+57s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+58s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+60s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+61s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+62s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+63s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+64s ring-state=[001.msg	0	1789628032] triage-attempts=2 wake-queue=none watcher=alive handled=no acted=no
+t+65s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+66s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+67s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+68s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+69s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+71s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+72s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+73s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+74s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+75s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+76s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+77s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+78s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+80s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+81s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+82s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+83s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+84s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+85s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+86s ring-state=[001.msg	0	1789628054] triage-attempts=3 wake-queue=none watcher=alive handled=no acted=no
+t+87s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+88s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+90s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+91s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+92s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+93s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+94s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+95s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+96s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+97s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+99s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+100s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+101s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+102s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+103s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+104s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+105s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+106s ring-state=[001.msg	0	1789628075] triage-attempts=4 wake-queue=none watcher=alive handled=no acted=no
+t+107s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+109s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+110s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+111s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+112s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+113s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+114s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+115s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+116s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+117s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+118s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+120s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+121s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+122s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+123s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+124s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+125s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+126s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+127s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+129s ring-state=[001.msg	0	1789628096] triage-attempts=5 wake-queue=none watcher=alive handled=no acted=no
+t+130s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+131s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+132s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+133s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+134s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+135s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+136s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+137s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+139s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+140s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+141s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+142s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+143s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+144s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+145s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+146s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+147s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+148s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+150s ring-state=[001.msg	0	1789628118] triage-attempts=6 wake-queue=none watcher=alive handled=no acted=no
+t+151s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+152s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+153s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+154s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+155s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+156s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+157s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+158s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+159s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+160s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+162s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+163s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+164s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+165s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+166s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+167s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+168s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+169s ring-state=[001.msg	0	1789628139] triage-attempts=7 wake-queue=none watcher=alive handled=no acted=no
+t+170s ring-state=[(absent)] triage-attempts=7 wake-queue=none watcher=alive handled=yes acted=yes
