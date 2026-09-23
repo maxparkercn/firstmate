@@ -1,0 +1,22 @@
+Kimi Code 2.1.0, launched by hand in fresh git worktrees of one project.
+Store: a throwaway KIMI_CODE_HOME; the operator's own ~/.kimi-code was never written.
+
+1) CONTROL: a fresh worktree with no pre-registration
+   verdict: PROMPTED - the worker stops on the dialog
+
+2) TREATMENT: the same shape, pre-registered first
+   $ bin/fm-kimi-trust.sh <worktree> <project>
+   trusted: /private/tmp/fm-kimi-live.Eon4DN/unit/e2-94819 (wd_e2-94819_7ff4b32916c2)
+   verdict: no dialog - the worker reaches the composer
+
+3) RE-REGISTERING is a no-op that keeps the captain's own trustedAt
+   already trusted: /private/tmp/fm-kimi-live.Eon4DN/unit/e2-94819 (wd_e2-94819_7ff4b32916c2)
+   record unchanged: {"root":"/private/tmp/fm-kimi-live.Eon4DN/unit/e2-94819","trustedAt":1790178885973}
+   verdict on relaunch: no dialog - the worker reaches the composer
+
+4) ADVERSARIAL: launched through a symlink to the registered worktree
+   verdict: no dialog - the worker reaches the composer
+
+5) ADVERSARIAL: a subdirectory of the registered worktree is NOT covered
+   verdict: PROMPTED - the worker stops on the dialog
+   (which is why the helper registers the launch directory alone)

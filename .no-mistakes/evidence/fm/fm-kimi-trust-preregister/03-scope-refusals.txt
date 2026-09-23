@@ -1,0 +1,27 @@
+Every out-of-scope target the spawn could hand the helper, driven through the CLI.
+A refusal is a non-zero exit with a named cause and no store write.
+
+a primary checkout               exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/unit/proj' is a primary checkout, not an isolated worktree
+a subdirectory of a worktree     exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/unit/live2/child' is not a worktree root (its root is '/private/tmp/fm-kimi-live.Eon4DN/unit/live2')
+a worktree of another repo       exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/other-wt' is not a worktree of project '/private/tmp/fm-kimi-live.Eon4DN/unit/proj'
+a plain non-git directory        exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/plain' is not inside a git repository
+the home directory               exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/home' is the home directory, not a task worktree
+the Kimi home itself             exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/home/.kimi-code' is the Kimi home directory, not a task worktree
+the filesystem root              exit=1
+  error: refusing to pre-register Kimi trust: '/' is the filesystem root, not a task worktree
+a home Kimi never created        exit=1
+  error: refusing to pre-register Kimi trust: Kimi home '/tmp/fm-kimi-live.Eon4DN/nohome/.kimi-code' is not an accessible directory; Kimi creates it on its first run, and this registers trust only in a home Kimi has already initialised
+secondmate: unseeded dir         exit=1
+  error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/plain' carries no .fm-secondmate-home marker, so it is not a seeded secondmate home
+no arguments                     exit=2
+  usage: fm-kimi-trust.sh <worktree> <project>
+       fm-kimi-trust.sh --secondmate-home <home> <id>
+
+Kimi home the refusal declined to provision: []
+Trust records in the store before these refusals: 5, after: 5

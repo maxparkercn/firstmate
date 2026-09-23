@@ -1,0 +1,20 @@
+The record FILENAME is the whole lookup key, so the helper's workspace-id
+derivation has to match Kimi's byte for byte. Each awkward directory name below
+is a fresh worktree the helper registers, then Kimi Code 2.1.0 is launched in it:
+"no dialog" means the name Kimi looked up is the name the helper wrote.
+
+basename: UPPER Case  Dir!
+  helper wrote record: wd_upper-case-dir_7040e034d89a
+  launch: no dialog
+basename: ends-with--
+  helper wrote record: wd_ends-with_2a012d6edc0e
+  launch: no dialog
+basename: --starts-with-dashes
+  helper wrote record: wd_starts-with-dashes_25a564209d55
+  launch: no dialog
+basename: @@@
+  helper wrote record: wd_workspace_7ef9506f2478
+  launch: no dialog
+basename: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-bbbb
+  helper wrote record: wd_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa_13e7edcac5fd
+  launch: no dialog

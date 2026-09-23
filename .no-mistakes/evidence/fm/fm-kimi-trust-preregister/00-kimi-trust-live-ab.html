@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>Kimi folder-trust pre-registration — live A/B</title>
+<style>
+ body{margin:0;background:#0d1117;color:#e6edf3;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:28px 32px 20px}
+ h1{font-size:21px;margin:0 0 6px} p.sub{margin:0 0 24px;color:#9198a1;max-width:900px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(520px,100%),1fr));gap:20px;align-items:start}
+ .card{background:#010409;border:1px solid #30363d;border-radius:10px;overflow:hidden;min-width:0}
+ .head{padding:10px 14px;font-weight:600;display:flex;gap:10px;align-items:center;border-bottom:1px solid #30363d}
+ .bad .head{background:#2d1618;color:#ffb3ba} .good .head{background:#10251a;color:#7ee2a8}
+ .tag{font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;padding:3px 7px;border-radius:999px;border:1px solid currentColor;opacity:.85}
+ pre{margin:0;padding:14px;overflow-x:auto;font:12px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace;color:#c9d1d9;white-space:pre}
+ .note{padding:10px 14px;border-top:1px solid #30363d;color:#9198a1;font-size:13px}
+ footer{margin-top:26px;color:#9198a1;font-size:13px;max-width:980px}
+ code{font:12px/1 ui-monospace,Menlo,monospace;color:#d2a8ff}
+</style></head><body>
+<h1>“Trust this folder?” never reaches a Kimi worker anymore</h1>
+<p class="sub">Two runs of the real <code>bin/fm-spawn.sh --harness kimi</code> against a real tmux backend, a real
+treehouse worktree and the real Kimi Code 2.1.0 binary, in an isolated lab home. Same never-trusted worktree, same
+sampling (pane captured every 0.35&nbsp;s), same frame index. The only difference is whether the spawn's
+<code>bin/fm-kimi-trust.sh</code> pre-registration could write Kimi's workspace-trust store.</p>
+<div class="grid">
+ <section class="card bad"><div class="head">CONTROL — pre-registration refused <span class="tag">2 frames show the dialog</span></div>
+  <pre>&lt;user&gt;@&lt;host&gt; project % treehouse get
+🌳 Setting up worktree...
+🌳 Entered worktree at ~/.treehouse/project-90f527/1/project. Type &#x27;exit&#x27; to return.
+&lt;user&gt;@&lt;host&gt; project % export GOTMPDIR=&lt;task-tmp&gt;/gotmp
+&lt;user&gt;@&lt;host&gt; project % export COMPACT_ADVISER_DISABLE=1
+&lt;user&gt;@&lt;host&gt; project % export FM_TASK_ID=kimi-ctl-44107
+&lt;user&gt;@&lt;host&gt; project % . &#x27;&lt;task-tmp&gt;/launch.s1790178678.44130.31164.sh…
+ ─────────────────────────────────────────────────────────────────────────────────────────────…
+  Trust this folder?
+  ↑↓ navigate · Enter select · Esc exit
+  &lt;scratch&gt;/lab/home/.treehouse/project-90f527/1/project
+  Project-level MCP servers are disabled until you explicitly choose Trust. Trust starts the l…
+   ❯ Trust this folder
+     Enable project MCP servers. Remembered for this folder.
+     Don&#x27;t trust
+     Exit Kimi Code. Asked again next launch.
+ ─────────────────────────────────────────────────────────────────────────────────────────────…</pre>
+  <div class="note">The spawn warned <em>“could not pre-register Kimi workspace trust … the launch will answer the
+  folder-trust dialog in window …”</em> and carried on; the live readiness gate answered the dialog as the backstop.</div></section>
+ <section class="card good"><div class="head">TREATMENT — the spawn pre-registered the worktree <span class="tag">0 frames show the dialog</span></div>
+  <pre>&lt;user&gt;@&lt;host&gt; project % treehouse get
+🌳 Setting up worktree...
+🌳 Entered worktree at ~/.treehouse/project-90f527/1/project. Type &#x27;exit&#x27; to return.
+&lt;user&gt;@&lt;host&gt; project % export GOTMPDIR=&lt;task-tmp&gt;/gotmp
+&lt;user&gt;@&lt;host&gt; project % export COMPACT_ADVISER_DISABLE=1
+&lt;user&gt;@&lt;host&gt; project % export FM_TASK_ID=kimi-trt-60099
+&lt;user&gt;@&lt;host&gt; project % . &#x27;&lt;task-tmp&gt;/launch.s1790178736.60119.13700.sh…
+ ╭────────────────────────────────────────────────────────────────────────────────────────────…
+ │                                                                                            …
+ │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                            …
+ │  ▐█████▌  Send /help for help information.                                                 …
+ │                                                                                            …
+ │  Directory: &lt;scratch&gt;/lab/home/.treehouse/project-90f527/1/project                   …
+ │  Session:                                                                                  …
+ │  Model:     test                                                                           …
+ │  Version:   2.1.0                                                                          …
+ │                                                                                            …
+ ╰────────────────────────────────────────────────────────────────────────────────────────────…
+   No session yet — one will be created on your first message.
+   tmux extended-keys is off. Modified Enter keys may not work. Add `set -g extended-keys on` …
+ ╭────────────────────────────────────────────────────────────────────────────────────────────…
+ │ &gt;                                                                                       …
+ ╰────────────────────────────────────────────────────────────────────────────────────────────…
+ Never Ask  test  …/project-90f527/1/project                                                  …
+                                                                                              …</pre>
+  <div class="note">Record written before launch:
+  <code>~/.kimi-code/workspace-trust/wd_project_40d19315cc4f</code> →
+  <code>{"root":"&lt;worktree&gt;","trustedAt":…}</code>, mode 0600 in a 0700 store.</div></section>
+</div>
+<footer>Both runs end on “brief pointer delivery was not confirmed” because the throwaway lab Kimi home carries a
+placeholder model and no credentials (<em>Model&nbsp;"test" is not configured</em>) — that is the lab, not the change.
+Readiness, the phase this change targets, is reached in both; only the control had to spend the fragile
+vendor-frame read to get there.</footer>
+</body></html>

@@ -1,0 +1,70 @@
+Live A/B through the real product: bin/fm-spawn.sh --harness kimi, real tmux backend,
+real treehouse worktree, real Kimi Code 2.1.0 binary, isolated lab HOME/FM_HOME.
+Both runs launch into the SAME never-trusted worktree; the only difference is whether
+the spawn's bin/fm-kimi-trust.sh pre-registration was able to write the store.
+
+############ CONTROL - pre-registration refused (trust store made read-only) ############
+spawn stderr:
+    warning: /tmp/fm-kimi-live.Eon4DN/lab/home/data/kimi-ctl-44107/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+    error: refusing to pre-register Kimi trust: '/private/tmp/fm-kimi-live.Eon4DN/lab/home/.kimi-code/workspace-trust' is not writable
+    warning: could not pre-register Kimi workspace trust for /private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project; the launch will answer the folder-trust dialog in window firstmate:fm-kimi-ctl-44107 instead
+    error: kimi brief pointer delivery was not confirmed; inspect window firstmate:fm-kimi-ctl-44107
+    warning: leaving task kimi-ctl-44107's slot claim on /private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project in place; the Treehouse project lock is no longer held, so the next spawn's claim replaces it
+
+pane frames carrying the trust dialog: 2
+representative frame (0.35s sampling):
+    ===FRAME 12 t=23:51:20===
+    <user>@<host> project % treehouse get
+    🌳 Setting up worktree...
+    🌳 Entered worktree at ~/.treehouse/project-90f527/1/project. Type 'exit' to return.
+    <user>@<host> project % export GOTMPDIR=/tmp/fm-kimi-ctl-44107/gotmp
+    <user>@<host> project % export COMPACT_ADVISER_DISABLE=1
+    <user>@<host> project % export FM_TASK_ID=kimi-ctl-44107
+    <user>@<host> project % . '/tmp/fm-kimi-ctl-44107+1b1c8d6948084110da9dbae360ce9fb65fc00a345326fbce7079edb6dcba24c5/launch.s1790178678.44130.31164.sh'
+     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      Trust this folder?
+      ↑↓ navigate · Enter select · Esc exit
+      /private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project
+      Project-level MCP servers are disabled until you explicitly choose Trust. Trust starts the listed project MCP targets and remembers this folder.
+       ❯ Trust this folder
+         Enable project MCP servers. Remembered for this folder.
+         Don't trust
+         Exit Kimi Code. Asked again next launch.
+     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+############ TREATMENT - the spawn pre-registered the worktree ############
+spawn stderr:
+    warning: /tmp/fm-kimi-live.Eon4DN/lab/home/data/kimi-trt-60099/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode no-mistakes - confirm its definition of done matches
+    error: kimi brief pointer delivery was not confirmed; inspect window firstmate:fm-kimi-trt-60099
+    warning: leaving task kimi-trt-60099's slot claim on /private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project in place; the Treehouse project lock is no longer held, so the next spawn's claim replaces it
+
+pane frames carrying the trust dialog: 0
+same frame index, same worktree:
+    ===FRAME 12 t=23:52:18===
+    <user>@<host> project % treehouse get
+    🌳 Setting up worktree...
+    🌳 Entered worktree at ~/.treehouse/project-90f527/1/project. Type 'exit' to return.
+    <user>@<host> project % export GOTMPDIR=/tmp/fm-kimi-trt-60099/gotmp
+    <user>@<host> project % export COMPACT_ADVISER_DISABLE=1
+    <user>@<host> project % export FM_TASK_ID=kimi-trt-60099
+    <user>@<host> project % . '/tmp/fm-kimi-trt-60099+1b1c8d6948084110da9dbae360ce9fb65fc00a345326fbce7079edb6dcba24c5/launch.s1790178736.60119.13700.sh'
+     ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │                                                                                                                                                                                                    │
+     │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                                                                                                                                    │
+     │  ▐█████▌  Send /help for help information.                                                                                                                                                         │
+     │                                                                                                                                                                                                    │
+     │  Directory: /private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project                                                                                                          │
+     │  Session:                                                                                                                                                                                          │
+     │  Model:     test                                                                                                                                                                                   │
+     │  Version:   2.1.0                                                                                                                                                                                  │
+     │                                                                                                                                                                                                    │
+     ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+       No session yet — one will be created on your first message.
+       tmux extended-keys is off. Modified Enter keys may not work. Add `set -g extended-keys on` to ~/.tmux.conf and restart tmux.
+     ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+
+store the spawn wrote (record name is the workspace id Kimi looks the folder up by):
+    total 16
+    -rw-------@ 1  <user>  <group>  114 Sep 23 23:52 wd_project_40d19315cc4f
+    -rw-------@ 1  <user>  <group>   92 Sep 23 23:53 wd_sub-alpha_12770fb2772e
+    {"root":"/private/tmp/fm-kimi-live.Eon4DN/lab/home/.treehouse/project-90f527/1/project","trustedAt":1790178736303}{"root":"/private/tmp/fm-kimi-live.Eon4DN/lab/fm-homes/sub-alpha","trustedAt":1790178809970}

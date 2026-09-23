@@ -1,0 +1,15 @@
+A kimi secondmate launches in its seeded home, not a task worktree, so the spawn
+uses --secondmate-home. Driven against a home seeded the way bin/fm-home-seed.sh leaves it.
+
+1) CONTROL: the seeded home before registration
+   verdict: PROMPTED
+
+2) the id in the marker must match the id the spawn passes
+   exit=1  error: refusing to pre-register Kimi trust: '<scratch>/lab/fm-homes/sub-bravo' is marked for secondmate 'sub-bravo', not 'sub-charlie'
+
+3) TREATMENT: registered for the id it is actually marked for
+   trusted: <scratch>/lab/fm-homes/sub-bravo (wd_sub-bravo_79739262146b)
+   verdict: no dialog - the secondmate reaches its charter
+
+4) the marker cannot be a symlink standing in for another file's bytes
+   exit=1  error: refusing to pre-register Kimi trust: '<scratch>/lab/fm-homes/sub-bravo/.fm-secondmate-home' is a symlink; a seeded secondmate home carries the marker as a regular file
