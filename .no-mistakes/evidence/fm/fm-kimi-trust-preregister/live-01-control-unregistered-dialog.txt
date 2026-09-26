@@ -1,0 +1,53 @@
+$ tmux -L fm-lab new-session -d -s kimictl -x 200 -y 50 -c $SP/live1 'env HOME=$SP KIMI_CODE_HOME=$KH ~/.kimi-code/bin/kimi --auto'   # no pre-registration
+$ ls $KH/workspace-trust  -> (absent, 0 records)
+$ tmux -L fm-lab capture-pane -p -t kimictl
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Trust this folder?
+  ↑↓ navigate · Enter select · Esc exit
+
+  /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live1
+
+  Project-level MCP servers are disabled until you explicitly choose Trust. Trust starts the listed project MCP targets and remembers this folder.
+
+   ❯ Trust this folder
+     Enable project MCP servers. Remembered for this folder.
+
+     Don't trust
+     Exit Kimi Code. Asked again next launch.
+
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+Real bin/fm-spawn.sh, real tmux, real Kimi Code 2.1.1, disposable lab FM_HOME minted with bin/fm-lab-home.sh.
+HOME is the lab too, so the Kimi home, the treehouse worktree pool and all fleet state stay inside it.
+
+=== spawn command, sent from the lab fleet pane ===
+$ bin/fm-spawn.sh kimi-live-pretrust2 "$FM_HOME/proj" --harness kimi --mode local-only --yolo off
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  4 task(s) in flight, but no watcher has a fresh beacon (last beat: 355s ago, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  watcher supervision needs Stop-owned automatic recovery; inspect the hook registration and startup status before ending the turn.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+warning: /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T//fm-lab.WM9wCF/data/kimi-live-pretrust2/launch-brief.md records no ship branch; defaulting to legacy branch fm/kimi-live-pretrust2
+warning: /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T//fm-lab.WM9wCF/data/kimi-live-pretrust2/launch-brief.md records no delivery contract line (scaffolded before ship briefs recorded one); launching on the explicit --mode local-only - confirm its definition of done matches
+notice: kimi-live-pretrust2 ships mode=local-only while the standing posture for proj is no-mistakes - less rigor than the captain's standing posture; proceed only on a current explicit captain instruction or an intake judgment you can state
+spawned kimi-live-pretrust2 harness=kimi kind=ship mode=local-only yolo=off window=firstmate:fm-kimi-live-pretrust2 worktree=/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-lab.WM9wCF/.treehouse/proj-e9c6de/5/proj
+rc=0
+
+=== the record the spawn wrote into the lab Kimi home for the worktree it launched into ===
+$ find $LAB/.kimi-code/workspace-trust -type f | xargs -n1 basename ; cat
+wd_proj_535b5aa4ea0d:
+{"root":"/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-lab.WM9wCF/.treehouse/proj-e9c6de/5/proj","trustedAt":1790386295396}
+(exactly one record: the worktree. The project checkout $FM_HOME/proj the pane started in before 'treehouse get' is not registered.)
+
+=== the worker's own pane, polled every 0.3s while it launched ===
+polls=180 frames_showing_trust_dialog=0
+
+=== the worker pane at the end: composer reached, brief pointer delivered, dialog never shown ===
+lele@MacBook-Air proj % treehouse get
+A new version of treehouse is available: v2.3.0 → v3.0.1
+Run "treehouse update" to update
+🌳 Setting up worktree...
+🌳 Entered worktree at /var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-lab.WM9wCF/.treehouse/proj-e9c6de/5/proj. Type 'exit' to return.
+lele@MacBook-Air proj % export GOTMPDIR=/tmp/fm-kimi-live-pretrust2/gotmp
+lele@MacBook-Air proj % export COMPACT_ADVISER_DISABLE=1
+lele@MacBook-Air proj % export FM_TASK_ID=kimi-live-pretrust2
+lele@MacBook-Air proj % . '/tmp/fm-kimi-live-pretrust2+4191c8f5e556b3b334049bf46d0156f5da70dfc216f4ad2d0f17a697eb2e530c/launch.s1790386295.17262.29520.sh'
+   Skipped refreshing managed:kimi-code: OAuth provider "managed:kimi-code" requires login before it can be used.
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │                                                                                                                                                                                                                        │
+ │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                                                                                                                                                        │
+ │  ▐█████▌  Send /help for help information.                                                                                                                                                                             │
+ │                                                                                                                                                                                                                        │
+ │  Directory: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-lab.WM9wCF/.treehouse/proj-e9c6de/5/proj                                                                                                       │
+ │  Session:   session_c3e89c98-ce1c-4221-ab5c-fa3709413012                                                                                                                                                               │
+ │  Model:     K3                                                                                                                                                                                                         │
+ │  Version:   2.1.1                                                                                                                                                                                                      │
+ │                                                                                                                                                                                                                        │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ ✦ Kimi Code Desktop is here — Everything you love about Kimi Code, now on desktop
+   Run /desktop or visit https://www.kimi.com/code to install
+   No session yet — one will be created on your first message.
+   tmux extended-keys is off. Modified Enter keys may not work. Add `set -g extended-keys on` to ~/.tmux.conf and restart tmux.
+ ✨ Read the brief at /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-lab.WM9wCF/data/kimi-live-pretrust2/launch-brief.md and follow it exactly.
+   Error: [internal] Stored token for "kimi-code" was rejected; re-login required.
+   If this persists, run `/export-debug-zip` and share the file with us for diagnosis. Please don't share it publicly.
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ >                                                                                                                                                                                                                      │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ Never Ask  K3 thinking: high  …/proj-e9c6de/5/proj                                                                                                                            /web: use the Web UI for a better experience
+                                                                                                                                                                                                        context: 1% (39/1M)

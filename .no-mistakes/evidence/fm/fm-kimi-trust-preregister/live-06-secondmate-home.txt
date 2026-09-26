@@ -1,0 +1,39 @@
+A seeded secondmate home: .fm-secondmate-home naming 'sm-probe', AGENTS.md, bin/, data/state/config/projects.
+
+### refusals
+$ HOME=$SP bin/fm-kimi-trust.sh --secondmate-home $SP/sm-unseeded sm-probe
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/sm-unseeded' carries no .fm-secondmate-home marker, so it is not a seeded secondmate home
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh --secondmate-home $SP/sm-home someone-else
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/sm-home' is marked for secondmate 'sm-probe', not 'someone-else'
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/sm-home $SP/proj   # worktree mode must not accept a home
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/sm-home' is not inside a git repository
+  rc=1
+
+### the seeded home, already registered above as wd_sm-home_e9992e43a3aa; re-running is idempotent
+$ HOME=$SP bin/fm-kimi-trust.sh --secondmate-home $SP/sm-home sm-probe
+already trusted: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/sm-home (wd_sm-home_e9992e43a3aa)
+  rc=0
+
+### launching Kimi in that home
+$ tmux -L fm-lab new-session -d -s smchk -x 200 -y 50 -c $SP/sm-home 'env HOME=$SP KIMI_CODE_HOME=$KH ~/.kimi-code/bin/kimi --auto'
+$ tmux -L fm-lab capture-pane -p -t smchk   # verdict: COMPOSER (no dialog)
+   Skipped refreshing managed:kimi-code: OAuth provider "managed:kimi-code" requires login before it can be used.
+
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │                                                                                                                                                                                                    │
+ │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                                                                                                                                    │
+ │  ▐█████▌  Send /help for help information.                                                                                                                                                         │
+ │                                                                                                                                                                                                    │
+ │  Directory: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/sm-home                                                                                                  │
+ │  Session:                                                                                                                                                                                          │
+ │  Model:     K3                                                                                                                                                                                     │
+ │  Version:   2.1.1                                                                                                                                                                                  │
+ │                                                                                                                                                                                                    │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ ✦ Kimi Code Desktop is here — Everything you love about Kimi Code, now on desktop
+   Run /desktop or visit https://www.kimi.com/code to install

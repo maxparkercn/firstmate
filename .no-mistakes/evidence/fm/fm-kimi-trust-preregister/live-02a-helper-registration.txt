@@ -1,0 +1,15 @@
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/live2 $SP/proj
+trusted: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live2 (wd_live2_d2e9b858f9b6)
+rc=0
+
+$ ls -la $KH/workspace-trust
+total 8
+drwx------@  3 lele  staff   96 Sep 26 09:21 .
+drwxr-xr-x@ 12 lele  staff  384 Sep 26 09:21 ..
+-rw-------@  1 lele  staff  120 Sep 26 09:21 wd_live2_d2e9b858f9b6
+
+$ stat -f 'mode=%Sp' $KH/workspace-trust
+mode=drwx------
+
+$ cat $KH/workspace-trust/*
+{"root":"/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live2","trustedAt":1790385673487}

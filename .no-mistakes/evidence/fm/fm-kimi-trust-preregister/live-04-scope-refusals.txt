@@ -1,0 +1,41 @@
+store records before the refusals: 2
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/proj $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/proj' is a primary checkout, not an isolated worktree
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/plain $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/plain' is not inside a git repository
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/live2/subdir $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live2/subdir' is not a worktree root (its root is '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live2')
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/other-wt $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/other-wt' is not a worktree of project '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/proj'
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0' is the home directory, not a task worktree
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh / $SP/proj
+error: refusing to pre-register Kimi trust: '/' is the filesystem root, not a task worktree
+  rc=1
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/.kimi-code $SP/proj
+error: refusing to pre-register Kimi trust: '/private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/.kimi-code' is the Kimi home directory, not a task worktree
+  rc=1
+
+$ HOME=$SP/nohome bin/fm-kimi-trust.sh $SP/live1 $SP/proj   # a HOME with no .kimi-code
+error: refusing to pre-register Kimi trust: Kimi home '$SP/nohome/.kimi-code' is not an accessible directory; Kimi creates it on its first run, and this registers trust only in a home Kimi has already initialised
+  rc=1
+  $SP/nohome/.kimi-code created? no - refused rather than provisioned
+
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/live1   # missing the project argument
+usage: fm-kimi-trust.sh <worktree> <project>
+       fm-kimi-trust.sh --secondmate-home <home> <id>
+  rc=2
+
+store records after the refusals: 2 (wd_live2_d2e9b858f9b6 wd_live3_67c5a559cb0d )

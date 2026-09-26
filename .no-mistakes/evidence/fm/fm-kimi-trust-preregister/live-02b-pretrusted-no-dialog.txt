@@ -1,0 +1,30 @@
+$ HOME=$SP bin/fm-kimi-trust.sh $SP/live2 $SP/proj  -> trusted: .../live2 (wd_live2_d2e9b858f9b6)
+$ tmux -L fm-lab new-session -d -s kimitrt -x 200 -y 50 -c $SP/live2 'env HOME=$SP KIMI_CODE_HOME=$KH ~/.kimi-code/bin/kimi --auto'
+$ tmux -L fm-lab capture-pane -p -t kimitrt   # t=6s after launch
+Kimi Code updated to v2.1.1
+Changelog: https://moonshotai.github.io/kimi-code/en/release-notes/changelog.html
+
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │                                                                                                                                                                                                    │
+ │  ▐█▛█▛█▌  Welcome to Kimi Code!                                                                                                                                                                    │
+ │  ▐█████▌  Send /help for help information.                                                                                                                                                         │
+ │                                                                                                                                                                                                    │
+ │  Directory: /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/live2                                                                                                    │
+ │  Session:                                                                                                                                                                                          │
+ │  Model:     K3                                                                                                                                                                                     │
+ │  Version:   2.1.1                                                                                                                                                                                  │
+ │                                                                                                                                                                                                    │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ ✦ Kimi Code Desktop is here — Everything you love about Kimi Code, now on desktop
+   Run /desktop or visit https://www.kimi.com/code to install
+
+   No session yet — one will be created on your first message.
+   tmux extended-keys is off. Modified Enter keys may not work. Add `set -g extended-keys on` to ~/.tmux.conf and restart tmux.
+   Skipped refreshing managed:kimi-code: OAuth provider "managed:kimi-code" requires login before it can be used.
+
+ ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+ │ >                                                                                                                                                                                                  │
+ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ Never Ask  K3 thinking: high  …/T/fm-kimi-probe.AWlzc0/live2  wt-live2                                                                   ctrl-s to add guidance without waiting for the turn to finish
+                                                                                                                                                                                     context: 0% (0/1M)

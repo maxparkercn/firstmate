@@ -1,0 +1,18 @@
+Two linked worktrees of $SP/proj are trusted (wd_live2_..., wd_live3_...), the project itself never was.
+$ tmux -L fm-lab new-session -d -s projchk -x 200 -y 50 -c $SP/proj 'env HOME=$SP KIMI_CODE_HOME=$KH ~/.kimi-code/bin/kimi --auto'
+$ tmux -L fm-lab capture-pane -p -t projchk
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Trust this folder?
+  ↑↓ navigate · Enter select · Esc exit
+
+  /private/var/folders/9m/0zwy5dlx3h51v4rxb2pxkmvr0000gn/T/fm-kimi-probe.AWlzc0/proj
+
+  Project-level MCP servers are disabled until you explicitly choose Trust. Trust starts the listed project MCP targets and remembers this folder.
+
+   ❯ Trust this folder
+     Enable project MCP servers. Remembered for this folder.
+
+     Don't trust
+     Exit Kimi Code. Asked again next launch.
+
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

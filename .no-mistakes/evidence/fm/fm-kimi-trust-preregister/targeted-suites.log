@@ -1,0 +1,59 @@
+FM_TEST_BEGIN 2026-09-26T01:18:13Z tests/fm-kimi-trust.test.sh family=backend-dispatch expected_gate_skip=none
+ok - fm-kimi-trust.sh: a fresh worktree is registered with the vendor record shape
+ok - fm-kimi-trust.sh: only the launch directory is registered, never the primary checkout
+ok - fm-kimi-trust.sh: an existing trust record is reported and never overwritten
+ok - fm-kimi-trust.sh: unrelated store content is preserved
+ok - fm-kimi-trust.sh: the workspace id slug matches the vendor rule for every observed basename shape
+ok - fm-kimi-trust.sh: the slug's leading strip precedes truncation and its trailing strip follows it
+ok - fm-kimi-trust.sh: a slug left empty by substitution falls back to 'workspace'
+ok - fm-kimi-trust.sh: a symlinked argument registers the resolved path
+ok - fm-kimi-trust.sh: an absent $HOME/.kimi-code is refused, never created
+ok - fm-kimi-trust.sh: every out-of-scope directory is refused
+ok - fm-kimi-trust.sh: malformed invocations are usage errors
+ok - fm-kimi-trust.sh: a malformed trust store is refused
+ok - fm-kimi-trust.sh: a missing node interpreter is refused
+ok - fm-kimi-trust.sh: a scope refusal precedes the node requirement
+ok - fm-kimi-trust.sh: both seeded secondmate home shapes are registered
+ok - fm-kimi-trust.sh: secondmate mode refuses every unseeded directory
+ok - fm-kimi-trust.sh: worktree mode refuses a seeded secondmate home
+FM_TEST_END 2026-09-26T01:18:22Z tests/fm-kimi-trust.test.sh exit=0 duration_ms=9078 gate_skip=false
+FM_TEST_BEGIN 2026-09-26T01:18:22Z tests/fm-kimi-harness.test.sh family=pure-contract-unit expected_gate_skip=none
+ok - Kimi hook install is idempotent and removal restores every foreign config byte
+ok - Kimi hook removal preserves owned newline boundaries and pristine bytes
+ok - Kimi hook install refuses missing, malformed, and surprising config without writing
+ok - Kimi hook install refuses without jq before any config write
+ok - fm-spawn: kimi launches, delivers its brief, and registers a guarded turn-end token
+ok - fm-spawn: unsafe task roots are refused, owned roots are tightened, and launch files stay unique and 0600
+ok - Kimi hook stays silent and inert without a Firstmate registry token
+ok - fm-spawn: unsafe Kimi global config refuses before pane creation
+ok - fm-teardown: Kimi task pointer and registry token are removed
+ok - fm-spawn: Kimi fallback expands the active HOME
+ok - fm-spawn: missing Kimi executable refuses before pane creation
+ok - fm-spawn: kimi treats a silent pointer drop as a failed spawn
+ok - fm-spawn: kimi never sends the brief pointer before an observable ready signal
+ok - fm-spawn: a fresh Kimi worktree answers the exact trust dialog once and verifies advancement
+ok - fm-spawn: a swallowed Kimi trust keypress is re-sent until the dialog clears
+ok - fm-spawn: a Kimi banner captured before the trust dialog paints does not read as ready
+ok - fm-spawn: an answered Kimi trust dialog left in scrollback neither re-answers nor fails the spawn
+ok - fm-spawn: a blank Kimi viewport frame costs its poll and nothing else
+ok - fm-spawn: Kimi refuses a backend that cannot read the viewport, before launching
+ok - fm-spawn: a Kimi trust dialog with its hint wrapped across rows is answered normally
+ok - fm-spawn: a blank Kimi frame between banners restarts the two-capture ready count
+ok - fm-spawn: a failed Kimi viewport read fails readiness with the backend named
+ok - fm-spawn: Kimi refuses the ready verdict while trust dialog markers remain
+ok - fm-spawn: a Kimi trust dialog must visibly clear before brief delivery
+ok - fm-spawn: Kimi trust detection requires every observed dialog signal
+ok - fm-harness: markerless kimi keeps its ancestry identity under an inherited marker
+lock acquired: harness pid 87108
+ok - fm-lock recognizes Kimi ancestry and live lock holders
+ok - busy detection: real Kimi moon-plus-middot captures require its harness while idle labels stay idle
+ok - fm-watch classifies Kimi as unknown rather than from its spinner, and Grok's fallback stays isolated
+ok - composer classifier: kimi's existing bordered > shape is already safe without an override
+ok - fm-spawn: a kimi spawn pre-registers workspace trust for its worktree only
+ok - fm-spawn: a failed Kimi trust pre-registration warns and leaves the live dialog gate to answer
+FM_TEST_END 2026-09-26T01:19:44Z tests/fm-kimi-harness.test.sh exit=0 duration_ms=82150 gate_skip=false
+FM_TEST_SUMMARY total=2 failed=0 skipped_gate=0 duration_ms=91333
+FM_TEST_SUMMARY_FAMILY family=backend-dispatch count=1 duration_ms=9078 failed=0
+FM_TEST_SUMMARY_FAMILY family=pure-contract-unit count=1 duration_ms=82150 failed=0
+FM_TEST_SLOWEST rank=1 script=tests/fm-kimi-harness.test.sh duration_ms=82150
+FM_TEST_SLOWEST rank=2 script=tests/fm-kimi-trust.test.sh duration_ms=9078
